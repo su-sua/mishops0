@@ -5,6 +5,21 @@ import store from './store'
 
 Vue.config.productionTip = false
 
+
+//Vant组件引入
+import Vant from 'vant';
+import 'vant/lib/index.css';
+
+Vue.use(Vant);
+
+// 导入axios
+import axios from 'axios'
+Vue.prototype.$http=axios
+
+//引入css样式
+import './assets/css/main.css'
+
+
 new Vue({
   router,
   store,
